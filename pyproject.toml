@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "e3dump"
+author = "Louie Lu"
+author-email = "git@louie.lu"
+home-page = "https://github.com/mlouielu/e3dump"
+requires-python=">=3.6"
+requires = ["aiohttp", "aiodns", "cchardet", "lxml", "colorlog"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+[tool.flit.scripts]
+e3dump = "e3dump.cli:run"
